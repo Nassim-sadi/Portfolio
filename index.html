@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" id="htmlparent">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nassim SADI Portfolio</title>
+    <link rel="stylesheet" href="dist/css/output.css" />
+    <link rel="shortcut icon" href="dist/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a76ad242dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="dark:bg-zinc-800 bg-white">
+    <header>
+      <div
+        class="
+          w-full
+          bg-transparent
+          fixed
+          navparent
+          transition-colors
+          dark:text-gray-100 dark:bg-zinc-800
+          shadow-gray-700
+          dark:shadow-indigo-800
+        "
+      >
+        <div class="max-w-screen-xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-4">
+              <!-- logo -->
+              <div>
+                <a
+                  href="#"
+                  class="
+                    flex
+                    items-center
+                    py-4
+                    px-2
+                    text-gray-700 text-xl
+                    dark:text-gray-100
+                  "
+                  onclick="top_function()"
+                >
+                  <img src="/dist/img/logo.png" alt="logo" class="h-12" />
+                  <span class="font-bold">Nassim Sadi</span>
+                </a>
+              </div>
+
+              <!-- primary nav -->
+            </div>
+
+            <!-- secondary nav -->
+            <div class="flex items-center space-x-1">
+              <a
+                class="
+                  hidden
+                  md:block
+                  py-2
+                  px-3
+                  hover:bg-indigo-300
+                  text-indigo-900
+                  hover:text-indigo-800
+                  rounded
+                  transition
+                  duration-300
+                "
+                id="darkmode"
+                href="javascript:void(0)"
+              >
+                <i class="fa fa-moon"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/15NtIz8lrbgRdIhZGGXq1bKpz8EOTKElf/view?usp=sharing"
+                class="
+                  py-2
+                  px-3
+                  border-2 border-indigo-400
+                  hover:bg-indigo-300
+                  text-indigo-900
+                  hover:text-indigo-800 hover:dark:text-indigo-900
+                  dark:text-indigo-300
+                  rounded
+                  transition
+                  duration-300
+                  sm:text-sm
+                "
+                target="_blank"
+              >
+                <div class="flex items-center">
+                  <i class="fa fa-user pr-1"> </i> Download CV
+                </div>
+              </a>
+              <a
+                href="https://github.com/Nassim-sadi"
+                target="_blank"
+                class="
+                  hidden
+                  md:block
+                  py-2
+                  px-4
+                  hover:text-indigo-600 hover:bg-indigo-200
+                  rounded
+                  transition-colors
+                  duration-300
+                "
+              >
+                <div class="flex items-center">
+                  <i class="fa fa-github-square text-xl pr-1"></i> GitHub
+                </div></a
+              >
+              <a
+                href="https://www.linkedin.com/in/nassim-sadi-22587b156/"
+                target="_blank"
+                class="
+                  hidden
+                  md:block
+                  py-2
+                  px-4
+                  hover:text-indigo-600 hover:bg-indigo-200
+                  rounded
+                  transition-colors
+                  duration-300
+                "
+              >
+                <div class="flex items-center">
+                  <i class="fa fa-linkedin-square text-xl pr-1"></i> LinkedIn
+                </div>
+              </a>
+            </div>
+
+            <!-- mobile button goes here -->
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button" onclick="openNav()">
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="myNav" class="overlay bg-indigo-900/30">
+          <div class="mobile-menu overlay-content">
+            <a
+              class="
+                block
+                py-2
+                px-3
+                hover:bg-indigo-300
+                text-indigo-900
+                hover:text-indigo-800
+                rounded
+                transition
+                duration-300
+                w-10/12
+                m-auto
+              "
+              id="darkmodemobile"
+              href="javascript:void(0)"
+            >
+              <i class="fa fa-moon"></i>
+            </a>
+
+            <a
+              href="#mywork"
+              class="
+                block
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                h-12
+                w-10/12
+                m-auto
+              "
+            >
+              My work
+            </a>
+            <a
+              href="#myskills"
+              class="
+                block
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                h-12
+                w-10/12
+                m-auto
+              "
+            >
+              My skills
+            </a>
+            <a
+              href="https://github.com/Nassim-sadi"
+              target="_blank"
+              class="
+                block
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                w-10/12
+                m-auto
+              "
+            >
+              <i class="fa fa-github-square text-3xl pr-1"></i> GitHub
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/nassim-sadi-22587b156/"
+              class="
+                block
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                w-10/12
+                m-auto
+              "
+            >
+              <i class="fa fa-linkedin-square text-3xl pr-1"></i> LinkedIn
+            </a>
+            <a
+              target="_blank"
+              href="mailto:nassim.sadi@hotmail.com"
+              class="
+                block
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                w-10/12
+                m-auto
+              "
+            >
+              <i class="fa fa-envelope-square text-3xl pr-1"></i> Mail Me
+            </a>
+            <a
+              href="javascript:void(0)"
+              class="
+                py-2.5
+                px-4
+                text-sm
+                hover:text-indigo-600 hover:bg-indigo-200
+                rounded
+                transition-colors
+                duration-300
+                w-10/12
+                m-auto
+              "
+              onclick="closeNav()"
+            >
+              <i class="fa fa-window-close text-3xl pr-1"></i> Close
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <input
+      value="Top"
+      title="to top"
+      type="button"
+      class="
+        totop
+        fixed
+        bg-indigo-500
+        h-8
+        bottom-4
+        right-6
+        lg:right-16 lg:bottom-12
+        rounded-full
+        px-4
+        shadow-lg shadow-indigo-600/50
+        opacity-0
+        transition-opacity
+        z-1
+      "
+      onclick="top_function()"
+    />
+    <div class="w-full pt-52 text-gray-800 dark:text-gray-100">
+      <div
+        id="who"
+        class="
+          mt-12
+          prose prose-xl
+          max-w-screen-xl
+          text-left
+          mr-auto
+          ml-auto
+          px-2
+          md:px-0
+          scroll-m-12
+        "
+      >
+        <h1 class="text-indigo-600 dark:text-indigo-500">
+          I'm Nassim SADI ,I build Extraordinary Web Sites and Mobile
+          Applications
+        </h1>
+
+        <p class="text-gray-800 dark:text-gray-100">
+          For years parents have espoused the health benefits of eating garlic
+          bread with cheese to their children, with the food earning such an
+          iconic status in our culture that kids will often dress up as warm,
+          cheesy loaf for Halloween.
+        </p>
+        <p class="text-gray-800 dark:text-gray-100">
+          But a recent study shows that the celebrated appetizer may be linked
+          to a series of rabies cases springing up around the country.
+        </p>
+        <!-- ... -->
+      </div>
+    </div>
+
+    <div
+      id="mywork"
+      class="
+        prose prose-xl
+        max-w-screen-xl
+        text-left
+        mr-auto
+        ml-auto
+        px-2
+        md:px-0
+        scroll-m-12
+        text-gray-800
+        dark:text-gray-100
+      "
+    >
+      <h1 class="text-indigo-600 dark:text-indigo-500">My work</h1>
+      <!-- ... -->
+    </div>
+
+    <div
+      id="myskills"
+      class="
+        prose prose-xl
+        max-w-screen-xl
+        dark:prose-invert
+        text-left
+        mr-auto
+        ml-auto
+        px-2
+        md:px-0
+        scroll-m-12
+        text-gray-800
+        dark:text-gray-100
+      "
+    >
+      <h1 class="text-indigo-600 dark:text-indigo-500">My Skills</h1>
+
+      <div class="flex flex-wrap items-center justify-center">
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+        <div class="w-1/2 md:w-1/3 lg:w-1/6">
+          <img src="dist/img/logo.png" alt="logo" class="object-cover" />
+        </div>
+      </div>
+      <!-- ... -->
+    </div>
+
+    <div
+      id="contactme"
+      class="
+        prose prose-xl
+        max-w-screen-xl
+        text-left
+        mr-auto
+        ml-auto
+        px-2
+        md:px-0
+        scroll-m-12
+        text-gray-800
+        dark:text-gray-100
+      "
+    >
+      <h1 class="text-indigo-600 dark:text-indigo-500">Contact me</h1>
+
+      <!-- ... -->
+    </div>
+
+    <script src="dist/script/jquery-3.6.0.min.js"></script>
+    <script src="dist/script/script.js"></script>
+  </body>
+</html>

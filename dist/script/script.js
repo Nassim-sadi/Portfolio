@@ -54,11 +54,13 @@ $darkbtnM.click(function () {
   $darkbtnM.toggleClass("bg-indigo-400");
 });
 /* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+const mynav = document.getElementById("myNav");
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+const burger = document.querySelector(".hamburger-menu");
+
+// Event listeners
+burger.addEventListener("click", () => {
+  burger.classList.toggle("bar-change");
+  mynav.classList.toggle("w-0");
+  mynav.classList.toggle("w-72");
+});

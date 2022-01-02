@@ -1472,6 +1472,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1727,6 +1731,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

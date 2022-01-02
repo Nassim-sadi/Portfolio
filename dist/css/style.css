@@ -74,9 +74,6 @@
   transition: 0.3s ease all;
 }
 
-.hamburger-menu {
-  display: block;
-}
 .bar-change .bar1 {
   transform: rotate(-44deg) translate(-6px, 5px);
 }

@@ -1050,6 +1050,216 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.prose-2xl {
+  font-size: 1.5rem;
+  line-height: 1.6666667;
+}
+
+.prose-2xl :where(p):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl :where([class~="lead"]):not(:where([class~="not-prose"] *)) {
+  font-size: 1.25em;
+  line-height: 1.4666667;
+  margin-top: 1.0666667em;
+  margin-bottom: 1.0666667em;
+}
+
+.prose-2xl :where(blockquote):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.7777778em;
+  margin-bottom: 1.7777778em;
+  padding-left: 1.1111111em;
+}
+
+.prose-2xl :where(h1):not(:where([class~="not-prose"] *)) {
+  font-size: 2.6666667em;
+  margin-top: 0;
+  margin-bottom: 0.875em;
+  line-height: 1;
+}
+
+.prose-2xl :where(h2):not(:where([class~="not-prose"] *)) {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8333333em;
+  line-height: 1.0833333;
+}
+
+.prose-2xl :where(h3):not(:where([class~="not-prose"] *)) {
+  font-size: 1.5em;
+  margin-top: 1.5555556em;
+  margin-bottom: 0.6666667em;
+  line-height: 1.2222222;
+}
+
+.prose-2xl :where(h4):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.6666667em;
+  margin-bottom: 0.6666667em;
+  line-height: 1.5;
+}
+
+.prose-2xl :where(img):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(video):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(figure):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(figure > *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose-2xl :where(figcaption):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.6;
+  margin-top: 1em;
+}
+
+.prose-2xl :where(code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+}
+
+.prose-2xl :where(h2 code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.875em;
+}
+
+.prose-2xl :where(h3 code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8888889em;
+}
+
+.prose-2xl :where(pre):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.8;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.5rem;
+  padding-top: 1.2em;
+  padding-right: 1.6em;
+  padding-bottom: 1.2em;
+  padding-left: 1.6em;
+}
+
+.prose-2xl :where(ol):not(:where([class~="not-prose"] *)) {
+  padding-left: 1.5833333em;
+}
+
+.prose-2xl :where(ul):not(:where([class~="not-prose"] *)) {
+  padding-left: 1.5833333em;
+}
+
+.prose-2xl :where(li):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose-2xl :where(ol > li):not(:where([class~="not-prose"] *)) {
+  padding-left: 0.4166667em;
+}
+
+.prose-2xl :where(ul > li):not(:where([class~="not-prose"] *)) {
+  padding-left: 0.4166667em;
+}
+
+.prose-2xl > :where(ul > li p):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.8333333em;
+  margin-bottom: 0.8333333em;
+}
+
+.prose-2xl > :where(ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+}
+
+.prose-2xl > :where(ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl > :where(ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+}
+
+.prose-2xl > :where(ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.6666667em;
+  margin-bottom: 0.6666667em;
+}
+
+.prose-2xl :where(hr):not(:where([class~="not-prose"] *)) {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.prose-2xl :where(hr + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h2 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h3 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h4 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(table):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.4;
+}
+
+.prose-2xl :where(thead th):not(:where([class~="not-prose"] *)) {
+  padding-right: 0.6em;
+  padding-bottom: 0.8em;
+  padding-left: 0.6em;
+}
+
+.prose-2xl :where(thead th:first-child):not(:where([class~="not-prose"] *)) {
+  padding-left: 0;
+}
+
+.prose-2xl :where(thead th:last-child):not(:where([class~="not-prose"] *)) {
+  padding-right: 0;
+}
+
+.prose-2xl :where(tbody td):not(:where([class~="not-prose"] *)) {
+  padding-top: 0.8em;
+  padding-right: 0.6em;
+  padding-bottom: 0.8em;
+  padding-left: 0.6em;
+}
+
+.prose-2xl :where(tbody td:first-child):not(:where([class~="not-prose"] *)) {
+  padding-left: 0;
+}
+
+.prose-2xl :where(tbody td:last-child):not(:where([class~="not-prose"] *)) {
+  padding-right: 0;
+}
+
+.prose-2xl > :where(:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl > :where(:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 0;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1066,9 +1276,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mt-12 {
@@ -1107,6 +1331,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1121,6 +1349,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .max-w-screen-xl {
@@ -1157,6 +1405,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .scroll-smooth {
@@ -1203,6 +1457,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1238,6 +1502,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.625rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -1252,6 +1521,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-left {
@@ -1395,6 +1672,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-gray-100 {

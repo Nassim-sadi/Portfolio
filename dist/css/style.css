@@ -2,7 +2,6 @@
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
-  width: 0;
   position: fixed; /* Stay in place */
   left: 0;
   top: 0;
@@ -58,4 +57,32 @@
     top: 15px;
     right: 35px;
   }
+}
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 26px;
+  height: 2px;
+  margin: 6px;
+  border-radius: 10px;
+  transition: 0.3s ease all;
+}
+.hamburger-menu {
+  padding-right: 1rem;
+  transition: 0.3s ease all;
+}
+
+.hamburger-menu {
+  display: block;
+}
+.bar-change .bar1 {
+  transform: rotate(-44deg) translate(-6px, 5px);
+}
+.bar-change .bar2 {
+  opacity: 0;
+}
+.bar-change .bar3 {
+  transform: rotate(44deg) translate(-6px, -5px);
 }

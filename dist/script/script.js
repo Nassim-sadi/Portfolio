@@ -33,29 +33,21 @@ function top_function() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 // grab everything we need
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
 
-// add event listeners
-// btn.addEventListener("click", () => {
-//   menu.classList.toggle("hidden");
-// });
 const htmlParent = document.getElementById("htmlparent");
 $darkbtn = $("#darkmode");
 $darkbtnM = $("#darkmodemobile");
 $darkbtn.click(function () {
-  console.log("hello");
   htmlParent.classList.toggle("dark");
   $darkbtn.toggleClass("bg-indigo-400");
 });
 $darkbtnM.click(function () {
-  console.log("hello");
   htmlParent.classList.toggle("dark");
   $darkbtnM.toggleClass("bg-indigo-400");
 });
+
 /* Open when someone clicks on the span element */
 const mynav = document.getElementById("myNav");
-
 const burger = document.querySelector(".hamburger-menu");
 
 // Event listeners
@@ -63,4 +55,10 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("bar-change");
   mynav.classList.toggle("w-0");
   mynav.classList.toggle("w-72");
+});
+let pageHeight = window.innerHeight;
+
+let scrollDownBtn = document.getElementById("scrollDown");
+scrollDownBtn.addEventListener("click", function () {
+  window.scrollBy(0, pageHeight - pageHeight / 6);
 });

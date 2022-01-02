@@ -23,8 +23,9 @@
           navparent
           transition-colors
           dark:text-gray-100 dark:bg-zinc-800
-          shadow-gray-700
+          shadow-gray-600
           dark:shadow-indigo-800
+          z-10
         "
       >
         <div class="max-w-screen-xl mx-auto px-2 md:px-4">
@@ -260,9 +261,9 @@
       </div>
     </header>
     <input
-      value="Top"
-      title="to top"
+      value="to Top"
       type="button"
+      title="to top"
       class="
         totop
         fixed
@@ -280,36 +281,36 @@
       "
       onclick="top_function()"
     />
-    <div class="w-full pt-52 text-gray-800 dark:text-gray-100">
+
+    <div class="w-full h-screen relative text-gray-800 dark:text-gray-100">
       <div
         id="who"
         class="
-          mt-12
           prose prose-xl
           max-w-screen-xl
-          text-left
-          mr-auto
-          ml-auto
           px-2
           md:px-0
           scroll-m-12
+          absolute
+          bottom-1/4
+          m-auto
+          text-center
+          align-middle
+          right-0
+          left-0
         "
       >
-        <h1 class="text-indigo-600 dark:text-indigo-500">
-          I'm Nassim SADI ,I build Extraordinary Web Sites and Mobile
-          Applications
+        <h1 class="text-indigo-600 dark:text-indigo-500 mb-44">
+          I build Extraordinary Web Sites and Mobile Applications
         </h1>
-
-        <p class="text-gray-800 dark:text-gray-100">
-          For years parents have espoused the health benefits of eating garlic
-          bread with cheese to their children, with the food earning such an
-          iconic status in our culture that kids will often dress up as warm,
-          cheesy loaf for Halloween.
-        </p>
-        <p class="text-gray-800 dark:text-gray-100">
-          But a recent study shows that the celebrated appetizer may be linked
-          to a series of rabies cases springing up around the country.
-        </p>
+        <a
+          class="underline decoration-indigo-500 dark:text-white"
+          id="scrollDown"
+          href="javascript:void(0)"
+        >
+          Scroll down
+          <i class="fa fa-arrow-circle-down animate-bounce"></i>
+        </a>
         <!-- ... -->
       </div>
     </div>
@@ -329,96 +330,148 @@
         dark:text-gray-100
       "
     >
-      <h2 class="text-indigo-600 dark:text-indigo-500">My work</h2>
+      <h2 class="text-indigo-600 dark:text-indigo-500 mb-52">My work</h2>
       <!-- ... -->
     </div>
 
-    <div
-      id="myskills"
-      class="
-        prose prose-2xl
-        max-w-screen-xl
-        dark:prose-invert
-        text-leftgit
-        mr-auto
-        ml-auto
-        px-2
-        md:px-0
-        scroll-m-12
-        text-gray-800
-        dark:text-gray-100
-      "
-    >
-      <h2 class="text-indigo-600 dark:text-indigo-500">My Skills</h2>
-
-      <div class="flex flex-wrap items-center justify-center">
-        <div class="w-full md:w-1/3 border-2 border-indigo-400">
-          <h3 class="m-0">FrontEnd</h3>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/html5.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">Html 5</p>
+    <div class="max-w-full bg-indigo-600 rounded-t-full mb-24">
+      <div
+        id="myskills"
+        class="
+          prose prose-2xl
+          max-w-screen-xl
+          dark:prose-invert
+          text-left
+          mr-auto
+          ml-auto
+          px-2
+          md:px-0
+          scroll-m-12
+          text-gray-800
+          dark:text-gray-100
+        "
+      >
+        <div
+          class="prose prose-xl max-w-screen-xl text-white text-center pt-12"
+        >
+          <p>Hi ,Nice to meet you</p>
+          <p>My name is <span class="text-black"> Nassim Sadi</span></p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center h-fit">
+          <div
+            class="
+              w-full
+              md:w-1/4
+              h-80
+              md:-mb-20
+              m-4
+              rounded-xl
+              bg-white
+              dark:bg-zinc-800
+              drop-shadow-lg
+              dark:shadow-indigo-500
+            "
+          >
+            <h3 class="m-4">FrontEnd</h3>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/html5.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Html 5</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/css3.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Css 3</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/javascript.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Javascript</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/jquery.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Jquery</p>
+            </div>
           </div>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/css3.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">Css 3</p>
+          <div
+            class="
+              w-full
+              md:w-1/4
+              dark:bg-zinc-800
+              drop-shadow-lg
+              dark:shadow-indigo-500
+              h-80
+              md:-mb-20
+              bg-white
+              m-4
+              rounded-xl
+            "
+          >
+            <h3 class="m-4">BackEnd</h3>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/php.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Php</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/laravel.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Laravel</p>
+            </div>
           </div>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/javascript.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">Pure javascript</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/jquery.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">jquery</p>
+          <div
+            class="
+              w-full
+              md:w-1/4
+              dark:bg-zinc-800
+              drop-shadow-lg
+              dark:shadow-indigo-500
+              h-80
+              md:-mb-20
+              bg-white
+              m-4
+              rounded-xl
+            "
+          >
+            <h3 class="m-4">Mobile</h3>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/flutter.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Flutter</p>
+            </div>
+            <div class="mx-6">
+              <p class="my-0"><i class="fa fa-star text-sm mr-2"></i> Bloc</p>
+              <p class="my-0"><i class="fa fa-star text-sm mr-2"></i>Sqflite</p>
+              <p class="my-0">
+                <i class="fa fa-star text-sm mr-2"></i>FireBase
+              </p>
+            </div>
           </div>
         </div>
-        <div class="w-full md:w-1/3 border-2 border-indigo-400 h-80">
-          <h3 class="m-0">BackEnd</h3>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/php.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">Php</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/laravel.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">laravel</p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 border-2 border-indigo-400">
-          <h3 class="m-0">Mobile Developement</h3>
-          <div class="flex items-center">
-            <img
-              src="dist/img/skills/flutter.png"
-              alt="logo"
-              class="h-8 my-0 mx-4"
-            />
-            <p class="my-0">Flutter</p>
-          </div>
-        </div>
+        <!-- ... -->
       </div>
-      <!-- ... -->
     </div>
 
     <div
@@ -427,8 +480,6 @@
         prose prose-xl
         max-w-screen-xl
         text-left
-        mr-auto
-        ml-auto
         px-2
         md:px-0
         scroll-m-12

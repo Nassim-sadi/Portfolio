@@ -65,12 +65,12 @@
 .hamburger-menu div {
   width: 26px;
   height: 2px;
-  margin: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   border-radius: 10px;
   transition: 0.3s ease all;
 }
 .hamburger-menu {
-  padding-right: 1rem;
   transition: 0.3s ease all;
 }
 

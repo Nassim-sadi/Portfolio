@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="dark:bg-zinc-800 bg-white">
+  <body class="dark:bg-neutral-800 bg-white">
     <header>
       <div
         class="
@@ -22,9 +22,9 @@
           fixed
           navparent
           transition-colors
-          dark:text-gray-100 dark:bg-zinc-800
-          shadow-gray-600
-          dark:shadow-indigo-800
+          dark:text-gray-100 dark:bg-neutral-800
+          shadow-gray-300
+          dark:shadow-purple-400
           z-10
         "
       >
@@ -61,9 +61,9 @@
                   md:block
                   py-2
                   px-3
-                  hover:bg-indigo-300
-                  text-indigo-900
-                  hover:text-indigo-800
+                  hover:bg-purple-300
+                  text-purple-900
+                  hover:text-purple-800
                   rounded
                   transition
                   duration-300
@@ -78,11 +78,11 @@
                 class="
                   py-2
                   px-3
-                  border-2 border-indigo-400
-                  hover:bg-indigo-300
-                  text-indigo-900
-                  hover:text-indigo-800 hover:dark:text-indigo-900
-                  dark:text-indigo-300
+                  border-2 border-purple-400
+                  hover:bg-purple-300
+                  text-purple-900
+                  hover:text-purple-800 hover:dark:text-purple-900
+                  dark:text-purple-300
                   rounded
                   transition
                   duration-300
@@ -102,14 +102,17 @@
                   md:block
                   py-2
                   px-4
-                  hover:text-indigo-600 hover:bg-indigo-200
+                  text-gray-700
+                  dark:text-gray-50
+                  hover:text-purple-600 hover:bg-purple-200
                   rounded
                   transition-colors
                   duration-300
                 "
               >
                 <div class="flex items-center">
-                  <i class="fa fa-github-square text-xl pr-1"></i> GitHub
+                  <i class="fa fa-github-square text-xl pr-1"></i>
+                  GitHub
                 </div></a
               >
               <a
@@ -120,7 +123,9 @@
                   md:block
                   py-2
                   px-4
-                  hover:text-indigo-600 hover:bg-indigo-200
+                  text-gray-700
+                  dark:text-gray-50
+                  hover:text-purple-600 hover:bg-purple-200
                   rounded
                   transition-colors
                   duration-300
@@ -135,27 +140,27 @@
             <!-- mobile button goes here -->
             <div class="md:hidden flex items-center p-0">
               <div class="hamburger-menu">
-                <div class="bar1 bg-zinc-800 dark:bg-gray-50"></div>
-                <div class="bar2 bg-zinc-800 dark:bg-gray-50"></div>
-                <div class="bar3 bg-zinc-800 dark:bg-gray-50"></div>
+                <div class="bar1 bg-neutral-800 dark:bg-gray-50"></div>
+                <div class="bar2 bg-neutral-800 dark:bg-gray-50"></div>
+                <div class="bar3 bg-neutral-800 dark:bg-gray-50"></div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- mobile menu -->
-        <div id="myNav" class="overlay bg-indigo-900/30 w-0">
+        <div id="myNav" class="overlay bg-purple-900/30 w-0">
           <div class="mobile-menu overlay-content">
             <a
               class="
                 block
                 py-2
                 px-3
-                hover:bg-indigo-300
-                text-indigo-900
-                hover:text-indigo-800
+                hover:bg-purple-300
+                text-purple-900
+                hover:text-purple-800
                 rounded
-                transition
+                transition-colors
                 duration-300
                 w-10/12
                 m-auto
@@ -173,7 +178,7 @@
                 py-2.5
                 px-4
                 text-sm
-                hover:text-indigo-600 hover:bg-indigo-200
+                hover:text-purple-600 hover:bg-purple-200
                 rounded
                 transition-colors
                 duration-300
@@ -191,7 +196,7 @@
                 py-2.5
                 px-4
                 text-sm
-                hover:text-indigo-600 hover:bg-indigo-200
+                hover:text-purple-600 hover:bg-purple-200
                 rounded
                 transition-colors
                 duration-300
@@ -210,7 +215,7 @@
                 py-2.5
                 px-4
                 text-sm
-                hover:text-indigo-600 hover:bg-indigo-200
+                hover:text-purple-600 hover:bg-purple-200
                 rounded
                 transition-colors
                 duration-300
@@ -228,7 +233,7 @@
                 py-2.5
                 px-4
                 text-sm
-                hover:text-indigo-600 hover:bg-indigo-200
+                hover:text-purple-600 hover:bg-purple-200
                 rounded
                 transition-colors
                 duration-300
@@ -246,7 +251,7 @@
                 py-2.5
                 px-4
                 text-sm
-                hover:text-indigo-600 hover:bg-indigo-200
+                hover:text-purple-600 hover:bg-purple-200
                 rounded
                 transition-colors
                 duration-300
@@ -267,17 +272,17 @@
       class="
         totop
         fixed
-        bg-indigo-500
+        bg-purple-500
         h-8
         bottom-4
         right-6
         lg:right-16 lg:bottom-12
         rounded-full
         px-4
-        shadow-lg shadow-indigo-600/50
+        shadow-lg shadow-purple-600/50
         opacity-0
         transition-opacity
-        z-1
+        z-10
       "
       onclick="top_function()"
     />
@@ -287,12 +292,12 @@
         id="who"
         class="
           prose prose-xl
-          max-w-screen-xl
+          max-w-screen-2xl
           px-2
           md:px-0
           scroll-m-12
           absolute
-          bottom-1/4
+          top-1/3
           m-auto
           text-center
           align-middle
@@ -300,11 +305,11 @@
           left-0
         "
       >
-        <h1 class="text-indigo-600 dark:text-indigo-500 mb-44">
+        <h1 class="text-purple-600 dark:text-purple-500 mb-44">
           I build Extraordinary Web Sites and Mobile Applications
         </h1>
         <a
-          class="underline decoration-indigo-500 dark:text-white"
+          class="underline decoration-purple-500 dark:text-white"
           id="scrollDown"
           href="javascript:void(0)"
         >
@@ -315,35 +320,14 @@
       </div>
     </div>
 
-    <div
-      id="mywork"
-      class="
-        prose prose-2xl
-        max-w-screen-xl
-        text-left
-        mr-auto
-        ml-auto
-        px-2
-        md:px-0
-        scroll-m-12
-        text-gray-800
-        dark:text-gray-100
-      "
-    >
-      <h2 class="text-indigo-600 dark:text-indigo-500 mb-52">My work</h2>
-      <!-- ... -->
-    </div>
-
-    <div class="max-w-full bg-indigo-600 rounded-t-full mb-24">
+    <div class="max-w-full bg-purple-600 rounded-t-full mb-24">
       <div
         id="myskills"
         class="
-          prose prose-2xl
-          max-w-screen-xl
+          prose prose-xl
+          max-w-screen-2xl
+          m-auto
           dark:prose-invert
-          text-left
-          mr-auto
-          ml-auto
           px-2
           md:px-0
           scroll-m-12
@@ -352,24 +336,46 @@
         "
       >
         <div
-          class="prose prose-xl max-w-screen-xl text-white text-center pt-12"
+          class="
+            prose prose-xl
+            max-w-screen-xl
+            text-white text-center
+            py-12
+            m-auto
+          "
         >
-          <p>Hi ,Nice to meet you</p>
-          <p>My name is <span class="text-black"> Nassim Sadi</span></p>
+          <p class="font-semibold text-3xl px-24 md:px-64">
+            Hi ,I'm <span class="text-gray-100"> Nassim Sadi</span> ,Nice to
+            meet you
+          </p>
+          <p class="sm:px-32 md:px-64">
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser and phones .
+          </p>
+          <p>Laguages that i speak <i class="fa fa-arrow-down"></i></p>
         </div>
-        <div class="flex flex-wrap items-center justify-center h-fit">
+        <div
+          class="
+            grid
+            h-fit
+            gap-4
+            grid-cols-1
+            lg:grid-cols-3
+            max-w-screen-2xl
+            mx-auto
+            my-6
+            px-4
+          "
+        >
           <div
             class="
-              w-full
-              md:w-1/4
               h-80
-              md:-mb-20
-              m-4
+              lg:-mb-20
               rounded-xl
               bg-white
-              dark:bg-zinc-800
+              dark:bg-neutral-800
               drop-shadow-lg
-              dark:shadow-indigo-500
+              dark:shadow-purple-500
             "
           >
             <h3 class="m-4">FrontEnd</h3>
@@ -377,7 +383,7 @@
               <img
                 src="dist/img/skills/html5.png"
                 alt="logo"
-                class="w-6 my-0 mx-4"
+                class="w-6 my-0 ml-6 mr-4"
               />
               <p class="my-0">Html 5</p>
             </div>
@@ -385,7 +391,7 @@
               <img
                 src="dist/img/skills/css3.png"
                 alt="logo"
-                class="w-6 my-0 mx-4"
+                class="w-6 my-0 ml-6 mr-4"
               />
               <p class="my-0">Css 3</p>
             </div>
@@ -393,7 +399,7 @@
               <img
                 src="dist/img/skills/javascript.png"
                 alt="logo"
-                class="w-6 my-0 mx-4"
+                class="w-6 my-0 ml-6 mr-4"
               />
               <p class="my-0">Javascript</p>
             </div>
@@ -401,22 +407,37 @@
               <img
                 src="dist/img/skills/jquery.png"
                 alt="logo"
-                class="w-6 my-0 mx-4"
+                class="w-6 my-0 ml-6 mr-4"
               />
               <p class="my-0">Jquery</p>
             </div>
+            <h4 class="mx-5 my-0">Framework :</h4>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/bootstrap-5.png"
+                alt="logo"
+                class="w-6 my-0 ml-6 mr-4"
+              />
+              <p class="my-0">BootStrap 5</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="dist/img/skills/tailwind.png"
+                alt="logo"
+                class="w-6 my-0 ml-6 mr-4"
+              />
+              <p class="my-0">TailWind 3.0</p>
+            </div>
           </div>
+
           <div
             class="
-              w-full
-              md:w-1/4
-              dark:bg-zinc-800
+              dark:bg-neutral-800
               drop-shadow-lg
-              dark:shadow-indigo-500
+              dark:shadow-purple-500
               h-80
-              md:-mb-20
+              lg:-mb-20
               bg-white
-              m-4
               rounded-xl
             "
           >
@@ -427,9 +448,10 @@
                 alt="logo"
                 class="w-6 my-0 mx-4"
               />
-              <p class="my-0">Php</p>
+              <p class="my-0">PHP</p>
             </div>
-            <div class="flex items-center">
+            <h4 class="mx-5 my-0">Framework :</h4>
+            <div class="flex items-center mx-4">
               <img
                 src="dist/img/skills/laravel.png"
                 alt="logo"
@@ -440,20 +462,26 @@
           </div>
           <div
             class="
-              w-full
-              md:w-1/4
-              dark:bg-zinc-800
+              dark:bg-neutral-800
               drop-shadow-lg
-              dark:shadow-indigo-500
+              dark:shadow-purple-500
               h-80
-              md:-mb-20
+              lg:-mb-20
               bg-white
-              m-4
               rounded-xl
             "
           >
             <h3 class="m-4">Mobile</h3>
             <div class="flex items-center">
+              <img
+                src="dist/img/skills/dart.png"
+                alt="logo"
+                class="w-6 my-0 mx-4"
+              />
+              <p class="my-0">Dart</p>
+            </div>
+            <h4 class="mx-5 my-0">Framework :</h4>
+            <div class="flex items-center mx-4">
               <img
                 src="dist/img/skills/flutter.png"
                 alt="logo"
@@ -461,7 +489,7 @@
               />
               <p class="my-0">Flutter</p>
             </div>
-            <div class="mx-6">
+            <div class="mx-16">
               <p class="my-0"><i class="fa fa-star text-sm mr-2"></i> Bloc</p>
               <p class="my-0"><i class="fa fa-star text-sm mr-2"></i>Sqflite</p>
               <p class="my-0">
@@ -473,12 +501,30 @@
         <!-- ... -->
       </div>
     </div>
+    <div
+      id="mywork"
+      class="
+        prose prose-2xl
+        max-w-screen-2xl
+        text-left
+        mx-auto
+        px-2
+        md:px-0
+        scroll-m-12
+        text-gray-800
+        dark:text-gray-100
+      "
+    >
+      <h2 class="text-purple-600 dark:text-purple-500 mb-52">My work</h2>
+      <!-- ... -->
+    </div>
 
     <div
       id="contactme"
       class="
         prose prose-xl
-        max-w-screen-xl
+        max-w-screen-2xl
+        mx-auto
         text-left
         px-2
         md:px-0
@@ -487,7 +533,7 @@
         dark:text-gray-100
       "
     >
-      <h1 class="text-indigo-600 dark:text-indigo-500">Contact me</h1>
+      <h1 class="text-purple-600 dark:text-purple-500">Contact me</h1>
 
       <!-- ... -->
     </div>

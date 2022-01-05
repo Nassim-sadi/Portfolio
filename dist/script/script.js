@@ -39,11 +39,11 @@ $darkbtn = $("#darkmode");
 $darkbtnM = $("#darkmodemobile");
 $darkbtn.click(function () {
   htmlParent.classList.toggle("dark");
-  $darkbtn.toggleClass("bg-indigo-400");
+  $darkbtn.toggleClass("bg-purple-400");
 });
 $darkbtnM.click(function () {
   htmlParent.classList.toggle("dark");
-  $darkbtnM.toggleClass("bg-indigo-400");
+  $darkbtnM.toggleClass("bg-purple-400");
 });
 
 /* Open when someone clicks on the span element */

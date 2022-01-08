@@ -1068,6 +1068,216 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.prose-2xl {
+  font-size: 1.5rem;
+  line-height: 1.6666667;
+}
+
+.prose-2xl :where(p):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl :where([class~="lead"]):not(:where([class~="not-prose"] *)) {
+  font-size: 1.25em;
+  line-height: 1.4666667;
+  margin-top: 1.0666667em;
+  margin-bottom: 1.0666667em;
+}
+
+.prose-2xl :where(blockquote):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.7777778em;
+  margin-bottom: 1.7777778em;
+  padding-left: 1.1111111em;
+}
+
+.prose-2xl :where(h1):not(:where([class~="not-prose"] *)) {
+  font-size: 2.6666667em;
+  margin-top: 0;
+  margin-bottom: 0.875em;
+  line-height: 1;
+}
+
+.prose-2xl :where(h2):not(:where([class~="not-prose"] *)) {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8333333em;
+  line-height: 1.0833333;
+}
+
+.prose-2xl :where(h3):not(:where([class~="not-prose"] *)) {
+  font-size: 1.5em;
+  margin-top: 1.5555556em;
+  margin-bottom: 0.6666667em;
+  line-height: 1.2222222;
+}
+
+.prose-2xl :where(h4):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.6666667em;
+  margin-bottom: 0.6666667em;
+  line-height: 1.5;
+}
+
+.prose-2xl :where(img):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(video):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(figure):not(:where([class~="not-prose"] *)) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.prose-2xl :where(figure > *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose-2xl :where(figcaption):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.6;
+  margin-top: 1em;
+}
+
+.prose-2xl :where(code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+}
+
+.prose-2xl :where(h2 code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.875em;
+}
+
+.prose-2xl :where(h3 code):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8888889em;
+}
+
+.prose-2xl :where(pre):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.8;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.5rem;
+  padding-top: 1.2em;
+  padding-right: 1.6em;
+  padding-bottom: 1.2em;
+  padding-left: 1.6em;
+}
+
+.prose-2xl :where(ol):not(:where([class~="not-prose"] *)) {
+  padding-left: 1.5833333em;
+}
+
+.prose-2xl :where(ul):not(:where([class~="not-prose"] *)) {
+  padding-left: 1.5833333em;
+}
+
+.prose-2xl :where(li):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose-2xl :where(ol > li):not(:where([class~="not-prose"] *)) {
+  padding-left: 0.4166667em;
+}
+
+.prose-2xl :where(ul > li):not(:where([class~="not-prose"] *)) {
+  padding-left: 0.4166667em;
+}
+
+.prose-2xl > :where(ul > li p):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.8333333em;
+  margin-bottom: 0.8333333em;
+}
+
+.prose-2xl > :where(ul > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+}
+
+.prose-2xl > :where(ul > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl > :where(ol > li > *:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 1.3333333em;
+}
+
+.prose-2xl > :where(ol > li > *:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 1.3333333em;
+}
+
+.prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.6666667em;
+  margin-bottom: 0.6666667em;
+}
+
+.prose-2xl :where(hr):not(:where([class~="not-prose"] *)) {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.prose-2xl :where(hr + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h2 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h3 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(h4 + *):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl :where(table):not(:where([class~="not-prose"] *)) {
+  font-size: 0.8333333em;
+  line-height: 1.4;
+}
+
+.prose-2xl :where(thead th):not(:where([class~="not-prose"] *)) {
+  padding-right: 0.6em;
+  padding-bottom: 0.8em;
+  padding-left: 0.6em;
+}
+
+.prose-2xl :where(thead th:first-child):not(:where([class~="not-prose"] *)) {
+  padding-left: 0;
+}
+
+.prose-2xl :where(thead th:last-child):not(:where([class~="not-prose"] *)) {
+  padding-right: 0;
+}
+
+.prose-2xl :where(tbody td):not(:where([class~="not-prose"] *)) {
+  padding-top: 0.8em;
+  padding-right: 0.6em;
+  padding-bottom: 0.8em;
+  padding-left: 0.6em;
+}
+
+.prose-2xl :where(tbody td:first-child):not(:where([class~="not-prose"] *)) {
+  padding-left: 0;
+}
+
+.prose-2xl :where(tbody td:last-child):not(:where([class~="not-prose"] *)) {
+  padding-right: 0;
+}
+
+.prose-2xl > :where(:first-child):not(:where([class~="not-prose"] *)) {
+  margin-top: 0;
+}
+
+.prose-2xl > :where(:last-child):not(:where([class~="not-prose"] *)) {
+  margin-bottom: 0;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1189,16 +1399,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
 }
 
 .mb-4 {
@@ -1513,6 +1723,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -1727,6 +1942,102 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }
 
+.selection\:bg-red-500 *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-red-500 *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-500 *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-500 *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700 *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700 *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700\/70 *::-moz-selection {
+  background-color: rgb(55 65 81 / 0.7);
+}
+
+.selection\:bg-gray-700\/70 *::selection {
+  background-color: rgb(55 65 81 / 0.7);
+}
+
+.selection\:text-white *::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.selection\:text-white *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.selection\:bg-red-500::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-red-500::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-500::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-500::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-gray-700\/70::-moz-selection {
+  background-color: rgb(55 65 81 / 0.7);
+}
+
+.selection\:bg-gray-700\/70::selection {
+  background-color: rgb(55 65 81 / 0.7);
+}
+
+.selection\:text-white::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.selection\:text-white::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:scale-\[1\.05\]:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1867,6 +2178,42 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:shadow-red-600 {
   --tw-shadow-color: #dc2626;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:selection\:bg-gray-400 *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:selection\:bg-gray-400 *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:selection\:bg-gray-400\/40 *::-moz-selection {
+  background-color: rgb(156 163 175 / 0.4);
+}
+
+.dark .dark\:selection\:bg-gray-400\/40 *::selection {
+  background-color: rgb(156 163 175 / 0.4);
+}
+
+.dark .dark\:selection\:bg-gray-400::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:selection\:bg-gray-400::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:selection\:bg-gray-400\/40::-moz-selection {
+  background-color: rgb(156 163 175 / 0.4);
+}
+
+.dark .dark\:selection\:bg-gray-400\/40::selection {
+  background-color: rgb(156 163 175 / 0.4);
 }
 
 .dark .hover\:dark\:text-red-900:hover {
